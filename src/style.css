@@ -81,6 +81,7 @@ body {
  
    
 }
+
 .container-allIcons{
  
   display: flex;
@@ -118,6 +119,11 @@ body {
 .container-nav-links-ul{
   display: none;
 }
+.Nava{
+  text-decoration: none;
+  color: var(--colorDarkBtnText);
+}
+
 #moon{
   display: none;
 }
@@ -425,6 +431,7 @@ padding: 0 1.5rem;
 
 
 
+
 .container-shopping{
   max-width: 300px;
   width: 100%;
@@ -455,7 +462,7 @@ padding: 0 1.5rem;
   justify-content: center;
   align-items: center;
   font-size: 10px;
-
+  padding: 0.5rem;
 
 }
 .btnFilter-title{
@@ -469,6 +476,13 @@ padding: 0 1.5rem;
   color: var(--colorTextHighlight);
   pointer-events: none;
 }
+.active-filter {
+  padding: 0.5rem;
+  background-color: #1B1A23; /* Cambia el color de fondo activo a tu elección */
+  color: #fff; /* Cambia el color del texto activo a tu elección */
+}
+
+
 .container-shopping-card img{
   width: 100%;
   display: block;

@@ -18,6 +18,23 @@ import { rendersItmsCart } from "./rendersItmsCart/rendersItmsCart.js";
 
 });
  }
+ function effectBtn(){
+   
+   const filterButtons = document.querySelectorAll('.btnFilter');
+
+  
+   filterButtons.forEach((button) => {
+     button.addEventListener('click', () => {
+ 
+       filterButtons.forEach((btn) => {
+         btn.classList.remove('active-filter');
+       });
+   
+       
+       button.classList.add('active-filter');
+     });
+   });
+ }
 
  async function app(){
 
@@ -73,7 +90,8 @@ import { rendersItmsCart } from "./rendersItmsCart/rendersItmsCart.js";
     efectoFilter()
    
 
-    
+    effectBtn()
+
  }
 
 
